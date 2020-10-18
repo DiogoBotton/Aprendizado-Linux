@@ -24,6 +24,12 @@ cd .. -> volta um diretório
 
 cd /nomeDiretorio -> navega para um diretório existente
 
+mv [nomeArquivo] [caminho] -> move o arquivo para outro diretório
+
+mv [nomeArquivo] [NovoNomeDeArquivo] -> altera o nome do arquivo
+
+cp [nomeArquivo] [caminho] -> copia o arquivo e cola em outro diretório
+
 	// Criação e exclusão de pastas/arquivos:
 mkdir -> cria uma pasta
 
