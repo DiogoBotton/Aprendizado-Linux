@@ -1,0 +1,39 @@
+	// Listagem e leitura:
+pwd -> retorna em qual diretório o usuário se encontra atualmente 
+
+ls -> listar todos os arquivos do diretorio atual
+
+ls -a -> lista todos os arquivos, incluindo os ocultos, do diretório atual (-a = -all)
+
+cat [nomeArquivo] -> mostra o conteúdo de um arquivo (da primeira linha à última)
+
+lat [nomeArquivo] -> mostra o conteúdo de um arquivo "ao contrário" (da última linha à primeira)
+
+man [nomeComando] -> lista todas as combinações do comando digitado
+
+head -n[numeroLinha] [nomeArquivo] -> mostra o conteúdo de uma linha específica (primeiras linhas, -n1 é referente à primeira linha)
+
+tail -n[numeroLinha] [nomeArquivo] -> mostra o conteúdo de uma linha específica, mas ao contrário (ultimas linhas, -n1 é referente à última linha)
+
+tail -f [nomeArquivo] -> exibe o arquivo em tempo real (exibe edições em tempo real, por exemplo)
+
+	// Navegação entre diretórios
+cd [caminho] -> vai pra um diretorio específico
+
+cd .. -> volta um diretório
+
+cd /nomeDiretorio -> navega para um diretório existente
+
+	// Criação e exclusão de pastas/arquivos:
+mkdir -> cria uma pasta
+
+touch ou > -> cria um arquivo
+
+echo [text] > [nomeArquivo] -> adiciona conteúdo à um arquivo sobrescrevendo-o
+
+echo [text] >> [nomeArquivo] -> adiciona conteúdo à um arquivo, sem sobrescrever todo o arquivo
+obs. >> -> adiciona um conteúdo ao arquivo sem sobrescreve-lo
+
+rm [nomeArquivo] -> remove um arquivo específico
+
+rm -rf [nomeArquivo] -> remove todo o conteúdo de uma pasta específica (-f force, -r recursive)

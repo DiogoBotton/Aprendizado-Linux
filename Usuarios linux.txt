@@ -1,0 +1,16 @@
+	// Manipulação de usuários
+adduser [nomeUsuario] -> cria um usuário, após isso pede para digitar a senha (não aparece a digitação da senha)
+
+useradd -d [diretorio que será salvo o usuário] -s [tipo de acesso do sistema (/bin/bash)] [nomeUsuario] -> cria um usuário configurando onde será salvo e seu tipo de permissão
+
+passwd [nomeUsuario] -> altera a senha de um usuário
+
+su [nomeUsuario] -> faz login com um usuário específico
+
+cat /etc/passwd -> lista todos os usuários do SO
+
+adduser [nomeUsuario] [nomeGrupo] -> adiciona o usuário à um grupo específico
+
+deluser [nomeUsuario] [nomeGrupo] -> retira usuário de algum grupo específico
+
+deluser [nomeUsuario] -> deleta um usuário específico

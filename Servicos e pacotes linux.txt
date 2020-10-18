@@ -1,0 +1,21 @@
+	// Serviços
+netstat -nlpt -> exibe todos os serviços rodando na máquina
+
+service [nomeServico] start -> inicia algum serviço (service apache2 start, por exemplo)
+			\/
+		     restart -> reinicia o serviço
+		     reload -> recarrega o serviço
+	    	     stop -> desliga o serviço
+
+update-rc.d [nomeServico] enable/disable -> quando ativado (enable), roda o serviço logo quando inicializa o sistema
+
+	// Pacotes
+apt-get update -> atualiza a lista de pacotes do sistema
+
+apt-get install [nomePacote] -> instala pacote específico
+
+apt-get update && apt install [nomePacote] -y -> condicional &&, caso atualização de pacote ocorra com sucesso, instala pacote específico
+
+apt-get remove [nomePacote] -> remove pacote específico
+
+apt-cache search [nome] -> busca pacotes com o nome digitado

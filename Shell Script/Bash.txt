@@ -1,0 +1,33 @@
+extensão bash: .sh
+
+alterar o shell padrão (shell script): chsh -s /bin/[nomeShell]
+
+chmod +x [nomeArquivo] -> autoriza um arquivo para ser executado
+
+./[nomeArquivo] -> após digitar o caminho, coloque o nome do arquivo para executa-lo
+
+read -> comando que espera usuario digitar e apertar ENTER (parecido com Console.ReadLine())
+
+echo -> exibe algo em tela (parecido com Console.WriteLine())
+
+| (pipe) -> encadeia intruções/processos
+ex: ls | grep a
+LS listara o conteúdo do diretório, o resultado será passado para a próxima instrução
+ "greep a", que filtrará os nomes de arquivos que contém a letra A
+
+# -> comentários
+
+#! [caminho de qual script é escrito o arquivo]
+ex: #! /bin/bash
+
+$0,1... -> a numeração seria os argumentos passados na hora de executar algum comando/arquivo
+ex: ./arquivo.sh texto 5
+como paramêtro 1, é passado a palavra "texto", e como 2° paramêtro o número 5
+
+seq [numeroInicial] [numeroFinal] -> fará uma sequencia e mostrará na tela
+
+echo {a..z}, echo {1..10} -> mostrará todas as letras de A à Z, e o outro de 1 à 10
+
+ATALHOS:
+Alt-U -> desfazer alteração
+Alt-E -> refazer alteração

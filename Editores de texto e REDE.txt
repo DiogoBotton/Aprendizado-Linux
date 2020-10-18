@@ -1,0 +1,19 @@
+	// Editores de texto nativos
+nano [nomeDoArquivo OU caminho do arquivo] -> cria ou edita um arquivo específico
+
+vi [nomeArquivo] -> cria um arquivo pela janela do VIM
+
+leafpad [nomeArquivo] -> cria um arquivo para edição parecido com o bloco de notas (interface gráfica)
+
+gedit [nomeArquivo] -> da mesma forma que o anterior, editor de texto com interface grafica
+
+	// Rede
+ifconfig -> exibe a interface de rede 'eth0' (internet cabeada) e 'lo'
+
+route -> exibe o gateway (porta de entrada)
+
+nano /etc/network/interfaces -> abre arquivo para editar interfaces de rede, altera ip da maquina, por exemplo
+
+ifconfig eth0 [xxx.xxx.xxx.xxx (ip local)] netmask 255.255.255.0 -> altera o IP da máquina
+
+service networking restart -> reinicia a internet

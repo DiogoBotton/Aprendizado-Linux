@@ -1,0 +1,29 @@
+No servidor, criar ssh key com o comando: (SO's LINUX)
+
+-ssh-keygen -C "seu email de cadastro do google cloud"
+
+Digitar a senha "passphrase" e apertar ENTER
+
+Será criado 2 arquivos em um diretório específico:
+
+Identificação: /home/[USER]/.ssh/id_rsa
+Public Key: /home/[USER]/.ssh/id_rsa.pub
+
+Digite o comando para resgatar o código ssh-rsa e implanta-lo no projeto do Azure DevOps: 
+
+-cat /home/diogo_luo/.ssh/id_rsa.pub
+
+Após copiar o código, crie uma nova SSH Key no seu projeto do Azure
+
+Em seguida, para dar git clone e ser autenticado, copie o link SSH do seu
+repositório e digite o comando:
+
+-git clone git@ssh.dev.azure.com:v3/[NomeOrganização]/[NomeProjeto]/[NomeRepositorio]
+
+Após dar enter, será necessário colocar a senha (passphrase) criada anteriormente
+com o comando ssh-keygen
+
+OBS. A senha não aparecerá no terminal
+
+Após digitar a senha corretamente, será autenticado e liberado o clone do projeto
+

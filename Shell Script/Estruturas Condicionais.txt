@@ -1,0 +1,14 @@
+OPERADORES ARITMÉTICOS:
+
+-eq -> IGUAL =
+-ne -> DIFERENTE !=
+-lt -> MENOR <
+-le -> MENOR OU IGUAL <=
+-gt -> MAIOR >
+-ge -> MAIOR OU IGUAL >=
+
+OPERADORES LÓGICOS (funcionam também com os símbolos):
+
+-o -> OU ||
+-a -> E &&
+! -> NEGAÇÃO

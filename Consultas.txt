@@ -1,0 +1,39 @@
+	// Queries - Consultas
+| -> concatena resultados em pesquisas
+ex:
+
+cat /etc/passwd | grep '/bin/bash' -> mostra todos os usuários com acesso total do sistema
+
+grep -> procura padrões específicos digitados pelo usuário em um arquivo de texto
+ex:
+
+grep 'texto' [caminho] -> busca texto digitado em algum arquivo
+
+grep -v 'texto' [caminho] -> busca todos os resultados que não contem o texto digitado (contrário do cmd acima)
+
+awk -> extrai algum conteúdo de um arquivo de texto com possibilidade de montar um retorno formatado
+ex: igual o split() do C#
+
+awk -F [caracterDeSeparacao] 'ação' [nomeArquivo] -> retornará pequenos trechos de texto do arquivo
+    \/ 
+(field-separator)
+
+awk -F : '{print $1, $2}' [nomeArquivo] -> exibira os resultados da primeira ($1) e segunda ($2) divisão do texto
+
+cut -> tem a mesma função do awk, mas é menos verboso
+ex:
+
+cut -d : -f1 [nomeArquivo] -> exibira a primeira divisão (-f1) separados por dois pontos (:)
+
+locate [texto] -> pesquisa todos os diretórios que contem arquivos com a palavra digitada
+
+updatedb -> atualiza banco de dados (as vezes precisa para o locate)
+
+whereis [nomePrograma] -> mostra algumas informações sobre algum programa (onde está)
+
+which [nomePrograma] -> mesma função do comando acima, mas resumido
+
+find [caminho] -name [texto] -> pesquisa no diretório específico, arquivos com o nome digitado
+ 
+	// Alteração de textos
+sed 's/[textoQueSeraAlterado]/[textoQueSeraColocado]/' [nomeArquivo] -> altera determinada linha que contem algum texto (se houver), por outro 
