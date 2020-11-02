@@ -1,0 +1,9 @@
+Para criar uma screen (várias "telas"):
+
+screen -S [nomeScreen] -> cria uma nova screen.
+
+screen -R [nomeScreen] -> acessa screen criada.
+
+ATALHOS:
+
+CTRL + A + D -> Sai da screen, mas mantendo o servidor online, por exemplo.
