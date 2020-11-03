@@ -4,6 +4,8 @@ screen -S [nomeScreen] -> cria uma nova screen.
 
 screen -R [nomeScreen] -> acessa screen criada.
 
+screen -ls -> mostra uma lista com todas as screen's criadas
+
 ATALHOS:
 
 CTRL + A + D -> Sai da screen, mas mantendo o servidor online, por exemplo.
