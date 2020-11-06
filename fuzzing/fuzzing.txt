@@ -1,0 +1,29 @@
+Como fazer um fuzzing (automatização de teste de rotas em um site)
+
+Ferramenta: wfuzz
+
+wfuzz -c -z file, nomeArquivo.txt [dominio] -> exibe os retornos de protocolo
+http (Status Code) se existe no site as rotas escritas no arquivo de texto.
+
+-c: exibe as informações com cores.
+-z: tipo de teste.
+file: tipo de teste baseado em arquivo.
+--hc [StatusCode] -> ignora os retornos  com o status code do parametro:
+ex: 404.
+FUZZ -> o fuzz no final é referente à onde as palavras do arquivo serão
+adicionadas para fazer a busca.
+
+Comando usado:
+
+wfuzz -c -z file, nomeArquivo.txt --hc 404 http://mwh.testedepentest.com.br:8080/FUZZ
+
+O comando "FUZZ" no final do código pode vir com algum tipo de extensão para
+pesquisar extensões específicas pelas rotas do site
+ex:
+
+FUZZ.txt
+FUZZ.php
+FUZZ.zip
+
+..Entre outros..
+
